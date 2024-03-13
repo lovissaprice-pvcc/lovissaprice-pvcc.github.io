@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>html</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+
+    .column{
+        float: left;
+        width: 50%;
+    }
+
+    .row:after{
+        content:"";
+        display: table;
+        clear: both;
+
+    }
+
+    .topnav{
+        background-color:orange;
+        overflow: hidden;
+    }
+
+    .topnav a{
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+     background-color: rgb(243, 186, 100);
+     color: black;
+    }
+
+    .topnav a.active {
+     background-color: #ff6a00;
+    color: white;
+    }
+
+</style>
+</head>
+
+<center style="background-color: rgba(243, 219, 159, 0.76) ">
+
+<h1 style = "background-color: #f7d127">Operating Systems Terminology</h1>
+
+<body style="background-image: url('bricks.jpg');">
+
+<div class="topnav">
+    <a class = "active" href = " ch3opsys.html">Home</a>
+    <a href = "https://www.pvcc.edu/">PVCC</a>
+    <a href = "https://www.w3schools.com/">W3 Schools</a>
+    <a href = "https://forms.gle/TozihHzmiJwvvvET9">Contact Us</a>
+</div>
+
+<div class = "row">
+    <div class = "column" style = "background-color: #ff6a00" >
+    <h2>Term</h2>
+    <p>
+        
+        <ol>
+            <li>Network Classifications
+                <ul>
+                    <li>LAN</li>
+                    <li>MAN</li>
+                    <li>WAN</li>
+                </ul>
+            </li>
+            <br>
+            <li>Network Models
+                <ul>
+                    <li>Bus Model</li>
+                    <li>Star Model</li>
+                </ul>
+                <br>
+            <li>Protocols
+                <ul>
+                    <li>CSMA/CD Ethernet</li>
+                    <li>CSMA/CA Wifi</li>
+                </ul>
+                <br>
+            </li>
+            <li>Combining Networks
+                <ul>
+                    <li>Repeater</li>
+                    <li>Bridge</li>
+                    <li>Switch</li>
+                    <li>Router</li>
+                    <li>Gateway</li>
+                </ul>
+                <br>
+            </li>
+            <li>Client/Server Model
+                <ul>
+                    <li>p2p: peer-to-peer</li>
+                    <li>distributed system</li>
+                    <li>Cloud Computing</li>
+                </ul>
+                <br>
+            </li>
+            <li>Internet Adressing
+                <ul>
+                    <li>Tier 1</li>
+                    <li>Tier 2</li>
+                    <li>Tier 3</li>
+                </ul>
+                <br>
+            </li>
+            <li>IP adress 
+                <ul>
+                    <li> <a href="https://icann.org/">ICANN </a></li>
+                    <li>DNS</li>
+                    <li>TLD: Top-Level Domain</li>
+                    <li><a href="https://www.worldstandards.eu/other/tlds/">Country-Code TLDs</a></li>
+                    <br>
+                </ul>
+            </li>
+            <li>Internet Protocols</li>
+                <ul>
+                    <li>FTP</li>
+                    <li>HTTPS</li>
+                    <li>SMTP</li>
+                    <br>
+                </ul>
+            <li>World Wide Web
+                <ul>
+                    <li>URL</li>
+                    <li>Client-side activities</li>
+                    <li>Server-side activities</li>
+                </ul>
+                <br>
+            </li>
+            <li>Internet Four-Layer Software
+                <ul>
+                    <li>Application Layer</li>
+                    <li>Transport Layer</li>
+                    <li>Network Layer</li>
+                    <li>Link Layer</li>
+                </ul>
+                <br>
+            </li>
+            <li>Internet is:
+                <ul>
+                    <li>Packet-switching network</li>
+                    <li>Fault tolerant</li>
+                    <li>Redundant</li>
+                </ul>
+                <br>
+            </li>
+            <li>Cybersecurity
+                <ul>
+                    <li>Malware</li>
+                    <li>Virus</li>
+                    <li>Worm</li>
+                    <li>Trojan Horse</li>
+                    <li>Spyware</li>
+                    <li>Phishing</li>
+                    <li>DDoS Attack</li>
+                </ul>
+                <br>
+            </li>
+            <li>Protection
+                <ul>
+                    <li>Firewall</li>
+                    <li>Spam Filter</li>
+                    <li>Proxy Server</li>
+                    <li>Antivirus Software</li>
+                    <li>Cryptography</li>
+                    <li>Public Key Encryption</li>
+                </ul>
+                <br>
+            </li>
+    
+        </ol>
+    </p>
+    </div>
+    <div class = "column" style = "background-color: #f7d127">
+        <h2>Definition</h2>
+        <p>
+            <ol>
+                <li>
+                    <ul>
+                        <li>Local Area Network: collection of computers in a single building or building complex</li>
+                        <li>Metropolitan Area Network: spans a local community</li>
+                        <li>Wide Area Network: links devices in the next city or across the world</li>
+                    </ul>
+                </li>
+
+    
+                        <br>
+                        <li>
+                            <ul>
+                                <li>The machines are all connected to a common communication line called a bus</li>
+                                <li>One machine serves as a central focal point to which all the others are connected</li>
+                            </ul>
+                            <br>
+                        <li>
+                            <ul>
+                                <li>Carrier Sense, Multiple Access with Collision Detection: dictates that each message be broadcast to all the machines on the bus</li>
+                                <li>Carrier Sense, Multiple Access with Collision Avoidance: tries to avoid collisions within the bus</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Passes signals back and forth between the two original buses without considering the meaning of the signals</li>
+                                <li>Forwards a message across the connection only when that message is destined for a computer on the other side. Thus, two machines residing on the same side of a bridge can exchange messages without interfering with communication taking place on the other side</li>
+                                <li>Produces a network consisting of several buses extending from the switch, as spokes on a wheel</li>
+                                <li>Recieves a message from the AP and forwards the message to the router at the Ethernet</li>
+                                <li>The “point” at which one network is linked to an internet</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Processes that provide service to and receive service from each other</li>
+                                <li>Consist of software units that execute as processes on different computers</li>
+                                <li>Huge pools of shared computers on the network can be allocated for use by clients as needed</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>At the top of the hierarchy and consist of very high-speed, high-capacity, international WANs</li>
+                                <li>Tend to be more regional in scope and less potent in their capabilities</li>
+                                <li>An intermediary between devices and the "core of the Internet"</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Internet Corporation for Assigned Names and Numbers: a nonprofit established to coordinate the Internet</li>
+                                <li>Domain Name System: converts mnemonic adresses to IP adresses</li>
+                                <li>Suffixes used to denote the domain's classification, such as .com, .org, .edu</li>
+                                <li>Two-letter TLDs for each specific country, ex: .au, .ca</li>
+                                <br>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Transfer of files from one host to another over a TCP-based network, such as the Internet</li>
+                                <li>Loads webpages using hypertext links</li>
+                                <li>Defines a way that two computers on the network may interact when transmitting an email message from one host to the other</li>
+                                <br>
+                            </ul>
+                        </li>
+                            <br>
+
+                        <li>
+                            <ul>
+                                <li>Uniform Resource Locator: a unique adress given to every document on the web</li>
+                                <li>The nteractive parts of websites that are performed by the client</li>
+                                <li>The nteractive parts of websites that are performed by the server</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Where a message originates and is then sent to the transport layer</li>
+                                <li>Accepts messages from the application layer and to ensure that the messages are properly formatted for transmission over the Internet</li>
+                                <li>Decides in which direction a packet should be sent at each step along the packet’s path through the Internet</li>
+                                <li>Transfers the packet</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Digital data is sent by breaking the data into blocks of bits called packets</li>
+                                <li>An internet is a more tolerant to failings in its system</li>
+                                <li>A form of fault tolerance; an internet has many possible paths for a message to be transmitted and is therefore resistent to problems</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Malicious software</li>
+                                <li>Software that infects a computer by inserting itself into programs that already reside in the machine</li>
+                                <li>Autonomous program that transfers itself through a network, taking up residence in computers and forwarding copies of itself to other computers</li>
+                                <li>Enters a computer system disguised as a desirable program that is willingly imported by the victim</li>
+                                <li>Collects information about activities at the computer on which it resides and reports that information back to the instigator of the attack</li>
+                                <li>An email is sent that asks the potential victim for information that is supposedly needed for legitimate purposes but is used for hostile purpose</li>
+                                <li>Distributed Denial of Service: a collaborated malware that overloads a computer with messages</li>
+                            </ul>
+                            <br>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Filters traffic passing through a point in the network</li>
+                                <li>Firewalls designed to block unwanted email</li>
+                                <li>Acts as an intermediary between a client and a server with the goal of shielding the client from adverse actions of the server</li>
+                                <li>Detects and removes the presence of known viruses and other infections</li>
+                                <li>The study of sending and receiving messages securely in the presence of adversaries</li>
+                                <li>The encryption and decryption algorithms are known, and one of the keys is known, but the encoded message remains secure</li>
+                            </ul>
+                            <br>
+                        </li>
+                
+    
+                
+               
+            </ol>
+        </p>
+        </div>
+
+</div>
+</body>
+
+</center>
+
+</html>
