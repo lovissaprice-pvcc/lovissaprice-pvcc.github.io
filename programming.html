@@ -1,0 +1,197 @@
+<!DOCTYPE = html>
+
+<html lang = "en">
+    <head>
+        <title>Programming</title>
+    </head>
+    <body   align="center" style ="color: white; background-color: rgb(167, 197, 122); font-family: 'Courier New', Courier, monospace;">
+       <h1>Chapter 5: Programming Algorithms and Software Testing</h1>
+       <br>
+       <h2>Phases of Computer Program Developement:</h2>
+        <table align="center" style = "color:black">
+            <tr>
+            <th bgcolor="green">1</th>
+            <td bgcolor="white">Understand the problem</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">2</th>
+            <td bgcolor="green">Design an algorithm to solve the problem</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">3</th>
+            <td  bgcolor="white">Write the program code in appropriate language based on the algorithm</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">4</th>
+            <td  bgcolor="green">Enter the program and save</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">5</th>
+            <td  bgcolor="white">Execute the program</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">6</th>
+            <td  bgcolor="green">Test the program, find errors and debug, then reset</td>
+        </tr>
+        <tr>
+            <th bgcolor="green">7</th>
+            <td bgcolor="white">Document and evaluate the program</td>
+        </tr>
+
+
+
+
+        </table>
+
+        <br>
+
+        <h2>Programming Structures</h2>
+        <ul>
+            <li>Sequential Structure: top-down execution</li>
+            <br>
+            <li>Decision structure: if/then/else</li>
+            <br>
+            <li>Iterative (looping):
+                <ol>
+                    <li>While loop: continue looping as long as something is true</li>
+                    <li>Repeat/until loop: continue looping until something is true</li>
+                    <li>For loop: loop a given number of times</li>
+                </ol>
+            </li>
+            <br>
+            <li>Recursive structures:
+            <ol>
+                <li>Repeat a set of instructions as a subtask of itself</li>
+                <li>Repetition continues until: 
+                    <ul>
+                        <li>a degenerative case(also "base case"), which is a degenerative case, is met</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        </ul>
+        <br>
+
+
+        <h2>Two classic programming/database problems </h2>
+
+            <ul>
+                <li>Sorting: descending order/ascending order
+                    <ol>
+                        <li>Sorting numbers</li>
+                        <li>Sorting strings (in accordance with ASCII values)</li>
+                    </ol>
+                </li>
+                <li>Searching: find specific data that meet a certain criteria
+                    <ol>
+                        <li>In database:
+                            <ol>
+                                <li>Filters: temporary search</li>
+                                <li>Queries: search criteria are saved so they don't have to be recreated</li>
+                            </ol>
+                        </li>
+
+                    </ol>
+                </li>
+                <li>Two popular search techniques:
+                    <ol>
+                        <li>Sequential search: search from top to bottom or bottom to top, one item at a time
+
+                        </li>
+                        <li>Binary search: 
+                            <ul>
+                                <li>only works if data is SORTED first</li>
+                                <li>Start in the middle, then go to half of that, etc.</li>
+                            </ul>
+                        </li>
+                        </ol>
+
+                </li>
+
+            </ul>
+        </li>
+        </ol>
+    </ul>
+    <br>
+
+    <h2>Two Classic Program Goals:</h2>
+        <ol>
+            <li>Efficiency: program takes minimal time and/or resources</li>
+            <li>Correctness: program runs in expected ways and works for all expected conditions</li>
+        </ol>
+    
+    <br>
+    <h2>Software Testing and Verification</h2>
+    <p>Types of Tests: </p>
+    <table style= "color: black">
+        <tr>
+            <th bgcolor="green">Term</th>
+            <th bgcolor="white">Definition</th>
+        </tr>
+
+        <tr>
+            <td bgcolor="white">Acceptance testing</td>
+            <td bgcolor="green">Verifying whether the whole system works as intended</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">Integration testing</td>
+            <td bgcolor="white">Ensuring that software components or functions operate together</td>
+        </tr>
+        <tr>
+            <td bgcolor="white">Unit testing</td>
+            <td bgcolor="green">Validating that each software unit runs as expected. A unit is the smallest testable component of an application</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">Functional testing</td>
+            <td bgcolor="white">Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions</td>
+        </tr>
+        <tr>
+            <td bgcolor="white">Performance testing</td>
+            <td bgcolor="green">Testing how the software runs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">Regression testing</td>
+            <td bgcolor="white">Checking whether new features break or degrade functionality</td>
+        </tr>
+
+        <tr>
+            <td bgcolor="white">Stress testing</td>
+            <td bgcolor="green">Testing how much strain the system can take before it fails. Stress testing is considered to be a type of non-functional testing</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">Usability testing</td>
+            <td bgcolor="white">Validating how well a customer can use a system or web application to complete a task</td>
+        </tr>
+    
+    </table>
+    <br>
+
+    <ul>
+        <li>Software testing is done to detect: 
+            <ol>
+                <li>Architectural flaws
+                </li>
+                <li>Poor design decisions</li>
+                <li>Invalid or incorrect functionality</li>
+                <li>Security vulnerabilities</li>
+                <li>Scalability issues</li>
+            </ol>
+        </li>
+        <br>
+        <br>
+
+        <li>Software testing best practices:
+            <ol>
+                <li>Continuous testing: project teams test each build as it becomes available</li>
+                <li>Configuration management: organizations centrally maintain test assets and track what software builds to test</li>
+                <li>Service virtualization: simulates the services and systems that are missing or not yet completed, enabling teams to reduce dependencies and test sooner</li>
+                <li>Defect or "bug tracking": automated tools allow teams to track defects, measure their scope and impact, and uncover related issues</li>
+                <li>Metrics and reporting: teams quickly see the overall health of a project and can monitor relationships between test, development and other project elements</li>
+            </ol>
+        </li>
+    </ul>
+        <br><br><br><br>
+
+        <p> <a href="https://www.ibm.com/topics/software-testing">From: IBM What is Software Testing?</a></p>
+    </body>
+</html>
